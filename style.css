@@ -1,0 +1,79 @@
+body {
+  background: linear-gradient(265deg, rgb(204, 204, 4), rgb(235, 235, 63));
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  border: none;
+  margin: auto;
+  position: relative;
+  margin-top: 100px;
+}
+
+.btn {
+  position: absolute;
+  top: 40px;
+  left: 60%;
+}
+
+#input {
+  height: 30px;
+  border-radius: 3%;
+  text-decoration: none;
+}
+#input:hover,
+#input:focus {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.weather {
+  height: 300px;
+  width: 200px;
+  border: 2px solid black;
+  text-align: center;
+  position: relative;
+  margin-bottom: 3px;
+  margin-right: 3px;
+  border-radius: 10%;
+  font-size: 20px;
+  background: rgb(116, 228, 89);
+}
+
+.Container {
+  width: 1080px;
+  height: 500px;
+  border: none;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 70px;
+}
+
+.weather:hover {
+  transform: rotateZ(15deg);
+  animation: render 3s ease-in-out infinite;
+}
+
+@keyframes render {
+  30% {
+    background-color: rgb(8, 185, 147);
+  }
+  60% {
+    background-color: rgb(2, 121, 129);
+  }
+  100% {
+    background-color: rgb(7, 100, 88);
+  }
+}
+
+.temp {
+  width: 50px;
+  height: 20px;
+  border: none;
+  position: absolute;
+  left: 75px;
+}
